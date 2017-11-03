@@ -1,0 +1,5 @@
+[alias]
+  st = status
+  co = checkout
+  nb = checkout -b
+
