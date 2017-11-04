@@ -3,6 +3,7 @@
 
 "colorscheme grb256 
 set number          " nonumber to hide
+set relativenumber  " current line and offsets
 "set incsearch
 "set hlsearch
 "set laststatus=2

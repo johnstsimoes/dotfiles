@@ -1,4 +1,4 @@
-f [ -f ~/.bashrc ]; then
- source ~/.bashrc
+if [ -f ~/.bash_common ]; then
+ source ~/.bash_common
 fi
 
