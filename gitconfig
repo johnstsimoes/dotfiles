@@ -3,3 +3,6 @@
   co = checkout
   nb = checkout -b
 
+[user]
+	name = John Simoes
+	email = jfernandosimoes@gmail.com
