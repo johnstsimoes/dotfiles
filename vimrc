@@ -12,6 +12,7 @@ set ignorecase                " case insensitive search
 set smartcase
 set encoding=utf-8
 set fileencoding=utf-8
+set mouse=nicr
 
 " =============================================================================
 " COLOURS
@@ -23,6 +24,11 @@ colorscheme zenburn
 " KEYBOARD MAPPINGS
 " -----------------
 map <C-N><C-N> :NERDTreeToggle<CR>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " =============================================================================
 " LEADER MAPPINGS
