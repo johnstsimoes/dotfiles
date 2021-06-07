@@ -13,6 +13,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set mouse=nicr
 set directory^=$HOME/.vim/tmp//
+set clipboard=unnamedplus
 
 " =============================================================================
 " COLOURS
