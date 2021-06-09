@@ -3,6 +3,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias ls="ls -G"
 alias vimrc="vim ~/.vimrc"
+alias cms="cmake -S . -B build/"
+alias cmb="cmake --build build/"
+alias cmt="cmake --build build/ && \
+           ctest --test-dir build/ --output-on-failure --verbose"
 
 export EDITOR='vim'
 export HISTSIZE=50000000

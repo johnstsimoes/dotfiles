@@ -43,7 +43,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 let NERDTreeIgnore = ['node_modules$']
 let NERDTreeShowHidden=0
-let g:OmniSharp_server_path = '/usr/local/bin/omnisharp'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -66,6 +65,5 @@ execute pathogen#infect()
 syntax on
 
 autocmd FileType cs set tabstop=4|set shiftwidth=2
-
 autocmd FileType ruby setlocal commentstring=#\ %s
 
