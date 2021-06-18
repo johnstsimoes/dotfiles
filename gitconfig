@@ -6,3 +6,5 @@
 [user]
 	name = John Simoes
 	email = jfernandosimoes@gmail.com
+[core]
+	excludesfile = /Users/johnsimoes/.gitignore

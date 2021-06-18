@@ -2,12 +2,15 @@ mkdir -p vim
 mkdir -p vim/autoload
 mkdir -p vim/bundle
 
-ln -s $PWD/bash_profile ~/.bash_profile
-ln -s $PWD/bash_common ~/.bash_common
+#ln -s $PWD/bash_profile ~/.bash_profile
+#ln -s $PWD/bash_common ~/.bash_common
+ln -s $PWN/shell_common ~/.zshrc
 ln -s $PWD/vim ~/.vim
 ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/gitconfig ~/.gitconfig
-ln -s $PWD/gitignore_global ~/.gitignore_global
+ln -s $PWD/gitignore ~/.gitignore
+
+git config --global core.excludesfile ~/.gitignore
 
 # Install vim bundles via Pathogen
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
