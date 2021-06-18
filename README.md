@@ -1,7 +1,18 @@
+# Dotfiles
+
+Its recommended to use "~/.dotfiles":
+
+```
+git clone git@github.com:johnstsimoes/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 mkdir -p vim
 mkdir -p vim/autoload
 mkdir -p vim/bundle
+```
 
+The symbolic links below should be adjusted depending on which shell you are using.
+
+```
 #ln -s $PWD/bash_profile ~/.bash_profile
 #ln -s $PWD/bash_common ~/.bash_common
 ln -s $PWN/shell_common ~/.zshrc
@@ -9,10 +20,17 @@ ln -s $PWD/vim ~/.vim
 ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/gitconfig ~/.gitconfig
 ln -s $PWD/gitignore ~/.gitignore
+```
 
+Also to enable global `git ignore`:
+
+```
 git config --global core.excludesfile ~/.gitignore
+```
 
-# Install vim bundles via Pathogen
+The commands below will install vim bundles:
+
+```
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
@@ -27,3 +45,4 @@ curl https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vi
 
 # Install pathogen
 curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim --create-dirs -o ~/.vim/autoload/pathogen.vim
+```
