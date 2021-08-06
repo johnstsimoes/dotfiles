@@ -3,7 +3,7 @@
 set number                    " nonumber to hide
 set incsearch
 set hlsearch
-set tabstop=2
+set tabstop=4
 set expandtab                 " tabs are spaces
 set autoindent
 set shiftwidth=2              " indent 2 spaces
