@@ -13,9 +13,7 @@ mkdir -p vim/bundle
 The symbolic links below should be adjusted depending on which shell you are using.
 
 ```
-#ln -s $PWD/bash_profile ~/.bash_profile
-#ln -s $PWD/bash_common ~/.bash_common
-ln -s $PWN/shell_common ~/.zshrc
+ln -s $PWD/shell_common ~/.zshrc
 ln -s $PWD/vim ~/.vim
 ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/gitconfig ~/.gitconfig
