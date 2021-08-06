@@ -16,7 +16,7 @@ export HISTSIZE=50000000
 export GTEST_COLOR=1
 export PROMPT="[%F{cyan}%1~%f]:~$"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(brew shellenv)"
 
 # Add brew libraries to search paths
 export CPATH=$HOMEBREW_PREFIX/include
