@@ -16,7 +16,7 @@ export HISTSIZE=50000000
 export GTEST_COLOR=1
 export PROMPT="[%F{cyan}%1~%f]:~$"
 
-eval "$(brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add brew libraries to search paths
 export CPATH=$HOMEBREW_PREFIX/include
@@ -35,4 +35,4 @@ setopt INC_APPEND_HISTORY
 setopt CHECK_JOBS
 
 #export PS1='[\[\e[1;34m\]\W\[\e[m\]]\[\033[0;32m\]\[\033[0m\]\$'
-#fortune | cowsay | lolcat --freq=.2
+fortune | cowsay | lolcat --freq=.2
