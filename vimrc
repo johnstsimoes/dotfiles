@@ -1,12 +1,10 @@
-" Based on Ross Noble's dotfiles
-
 set number                    " nonumber to hide
 set incsearch
 set hlsearch
 set tabstop=4
 set expandtab                 " tabs are spaces
 set autoindent
-set shiftwidth=2              " indent 2 spaces
+set shiftwidth=4              " indent 4 spaces
 set ignorecase                " case insensitive search
 set smartcase
 set encoding=utf-8
@@ -54,7 +52,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol = "❌"
 let g:syntastic_warning_symbol = "⚠️"
-let g:syntastic_style_error_symbol = "☢""
 let g:syntastic_loc_list_height = 5
 
 " =============================================================================
@@ -64,6 +61,4 @@ call matchadd('ColorColumn', '\%81v', 100)
 execute pathogen#infect()
 syntax on
 
-autocmd FileType cs set tabstop=4|set shiftwidth=2
-autocmd FileType ruby setlocal commentstring=#\ %s
-
+autocmd FileType cpp set tabstop=4|setlocal commentstring=#\ %s
