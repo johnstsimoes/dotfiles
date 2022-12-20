@@ -57,6 +57,8 @@ let g:syntastic_loc_list_height = 5
 " =============================================================================
 " MISC
 " -----------------
+au BufRead,BufNewFile *.py set noexpandtab
+
 call matchadd('ColorColumn', '\%81v', 100)
 execute pathogen#infect()
 syntax on
