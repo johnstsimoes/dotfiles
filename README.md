@@ -44,3 +44,11 @@ curl https://raw.githubusercontent.com/jnurmine/Zenburn/master/colors/zenburn.vi
 # Install pathogen
 curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim --create-dirs -o ~/.vim/autoload/pathogen.vim
 ```
+
+##
+
+Also install (optionally):
+```
+https://github.com/jaseg/lolcat
+https://github.com/cowsay-org/cowsay
+```
