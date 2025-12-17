@@ -19,12 +19,12 @@ export PROMPT="[%F{cyan}%1~%f]:~$"
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add brew libraries to search paths
-# export CPATH=$HOMEBREW_PREFIX/include
-# export LIBRARY_PATH=$HOMEBREW_PREFIX/lib
+export CPATH=$HOMEBREW_PREFIX/include
+export LIBRARY_PATH=$HOMEBREW_PREFIX/lib
 
 # Enable vi mode
-# bindkey -v
-# bindkey "^R" history-incremental-search-backward
+#bindkey -v
+#bindkey "^R" history-incremental-search-backward
 
 # Avoid nuisances with --gtest_filter regexes
 # unsetopt NOMATCH
@@ -39,6 +39,11 @@ export PROMPT="[%F{cyan}%1~%f]:~$"
 #    ssh-add ~/.ssh/id_rsa
 #fi
 
-export PS1='[\[\e[1;34m\]\W\[\e[m\]]\[\033[0;32m\]\[\033[0m\]\$'
+#export PS1='[\[\e[1;34m\]\W\[\e[m\]]\[\033[0;32m\]\[\033[0m\]\$'
 fortune | cowsay | lolcat --freq=.2
 
+export PATH="$PATH:/Users/steinbach/.local/bin"
+export PATH="$PATH:/Users/steinbach/flutter/bin:/Users/steinbach/flutter/bin"
+export CHROME_EXECUTABLE=/Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser
+
+export PATH="/opt/homebrew/bin:$PATH"

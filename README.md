@@ -52,3 +52,8 @@ Also install (optionally):
 https://github.com/jaseg/lolcat
 https://github.com/cowsay-org/cowsay
 ```
+
+## Karabiner keyboard modifications
+```
+cp karabiner/capslock_tap_esc_hold_ctrl.json ~/.config/karabiner/assets/complex_modifications/capslock_tap_esc_hold_ctrl.json
+```

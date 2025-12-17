@@ -13,6 +13,8 @@ set mouse=nicr
 set directory^=$HOME/.vim/tmp//
 set clipboard=unnamedplus
 
+set softtabstop=4
+
 " =============================================================================
 " COLOURS
 

@@ -1,0 +1,33 @@
+{
+  "title": "Caps Lock tap to Esc, hold as Control",
+  "rules": [
+    {
+      "description": "Caps Lock => Esc when tapped, Control when held",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "left_control",
+              "lazy": true
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 150
+          }
+        }
+      ]
+    }
+  ]
+}
